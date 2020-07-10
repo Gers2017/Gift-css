@@ -1,0 +1,197 @@
+/*Welocome to Gift library*/
+
+/*Reset css defaults*/
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    /* Variables */
+    /* 1.6rem * 10 base font size = 16px */
+    --rem-12: 1.2rem;
+    --rem-14: 1.4rem;
+    --rem-16: 1.6rem;
+    --rem-18: 1.8rem;
+    --rem-20: 2.0rem;
+    --rem-22: 2.2rem;
+    --rem-24: 2.4rem;
+    --rem-30: 3.0rem;
+    --rem-32: 3.2rem;
+    --rem-36: 3.6rem;
+    --rem-48: 4.8rem;
+
+    /* Paddings */
+    --high-padding:20px;
+    --main-padding: 15px;
+    --regular-padding: 10px;
+    --low-padding: 5px;
+    
+    /* Colors */
+    --dark-liver: #534D56;
+    --old-lavender:#656176;
+    --thistle:#DECDF5;
+    --magnolia: #F8F1FF;
+    --persian-green:#1B998B;
+    --dim-gray:#6E6A6F;
+    --grullo:#AA968A;
+    --pale-silver:#BFAFA6;
+    --light-gray:#D4D2D5;
+    --dark-blue-gray:#6C698D;
+    --dark-salmon:#E49273;
+    --light-blue:#A8D0DB;
+    --dark-cornflower-blue:#2B4570;
+    --glaucous:#7084BE;
+    --ghost-gray:#afafaf;
+}
+html{
+    /* 1 rem = 16px */
+    /* 1px = 0.0625 */
+    /* 10 px = 0.625 */
+    /* 10px = 62.5% */
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,p,blockquote,cite,button,ul,li{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size: var(--rem-36);
+}
+h2{
+    font-size: var(--rem-32);
+}
+h3{
+    font-size: var(--rem-30);
+}
+h4{
+    font-size: var(--rem-24);
+}
+h5{
+    font-size: var(--rem-22);
+}
+h6{
+    font-size: var(--rem-20);
+}
+p{
+    font-size: var(--rem-16);
+}
+/* Containers */
+.container-1200{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-960{
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* Sections */
+.main-section{
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.sub-section{
+    margin-bottom: 75px;
+}
+.page-section{
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.page-section > h2, .page-section > h3{
+    border-bottom: 1px solid var(--ghost-gray);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.article-title{
+    color:darkblue;
+}
+.article-title:hover{
+    text-decoration:underline darkblue;
+    cursor: pointer;
+}
+.paragraph-container p{
+    font-size: var(--rem-18);
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+/* flex */
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-basis-33{
+    flex-basis: calc(33.3% - 5rem);
+}
+.flex-basis-66{
+    flex-basis: calc(66.6% - 5rem);
+}
+.flex-basis-50{
+    flex-basis: calc(50% - 5rem);
+}
+.flex-basis-60{
+    flex-basis: calc(60% - 5rem);
+}
+.flex-basis-40{
+    flex-basis: calc(40% - 5rem);
+}
+/* Navegation */
+.navegation{
+    display: flex; justify-content: space-evenly;
+    padding: 0 var(--main-padding);
+    background-color: var(--dark-cornflower-blue);
+}
+.navegation li{
+    list-style: none;
+}
+.navegation a{
+    padding: var(--main-padding);
+    color: white;
+    text-decoration: none;
+}
+.card{
+    background-color: white;
+    border: 1px solid var(--ghost-gray);
+    padding: var(--high-padding)
+}
+.card h3{
+    margin-bottom: 1.5rem;
+}
+.card p{
+    font-size: var(--rem-16);
+}
+
+/* List */
+.list ul{
+    padding: var(--regular-padding);
+    font-size: var(--rem-16);
+}
+
+.list li{
+    list-style: decimal;
+    padding: var(--low-padding);
+}
+
+/* Writte your code here... */
+header#site-header{
+    min-height: 50vh;
+    background-color: #000;
+    color: white;
+}
